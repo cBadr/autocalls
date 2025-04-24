@@ -1,0 +1,26 @@
+# robots.txt for اوتو كول (Auto Call)
+# Professional configuration for SEO and security
+
+User-agent: *
+# Allow all content by default
+Allow: /
+
+# Block sensitive directories (if any exist)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /private/
+
+# Allow essential assets
+Allow: /public/
+Allow: /static/
+
+# Sitemap location (update if your sitemap URL is different)
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Crawl-delay for bots (optional, uncomment if needed)
+# Crawl-delay: 10
+
+# Block specific bad bots (optional, add more as needed)
+# User-agent: BadBot
+# Disallow: /
