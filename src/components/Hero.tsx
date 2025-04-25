@@ -67,7 +67,8 @@ const Hero: React.FC = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-700 mb-8 w-full lg:mx-0 mx-auto">
-<strong>اوتو كول</strong> منصة اتصالات ذكية تدير حملاتك تلقائياً، تستهدف العملاء المناسبين، وتحول المهتمين مباشرة لفريق المبيعات. عزز مبيعاتك ووفّر وقتك مع تقارير وتحليلات دقيقة وسهولة استخدام كاملة.
+<strong>بتدور على عملاء جاهزين للشراء؟</strong> <br></br>
+أوتو كول بيحددهم، يكلّمهم، ويحولهم لفريق المبيعات… وانت تركز في شغلك و  تتابع كل حاجة بسهولة وبدقة.
 </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
@@ -167,9 +168,14 @@ const Hero: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex justify-center">
-                  <button className="bg-green-500 text-white rounded-full py-3 px-6 shadow font-semibold transition hover:bg-green-600 transform hover:scale-105">
-                    ابدأ المكالمة
-                  </button>
+                  <a
+  href="tel:+201028576824"
+  className="bg-green-500 text-white rounded-full py-3 px-6 shadow font-semibold transition hover:bg-green-600 transform hover:scale-105 flex items-center justify-center"
+  aria-label="ابدأ المكالمة على الرقم 201028576824"
+>
+  <Phone className="w-5 h-5 ml-2" />
+  ابدأ المكالمة
+</a>
                 </div>
               </div>
               

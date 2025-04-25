@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-12 right-0 left-0 z-50 transition-all duration-300 ${
+    <nav className={`hidden md:block fixed top-12 right-0 left-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
     }`}>
       <div className="container mx-auto px-4 md:px-6">
@@ -56,7 +56,11 @@ const Navbar: React.FC = () => {
           
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
+            <button 
+  onClick={toggleMenu} 
+  className="text-gray-700 focus:outline-none"
+  aria-label={isMenuOpen ? "إغلاق القائمة الرئيسية" : "فتح القائمة الرئيسية"}
+>
               {isMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
             </button>
           </div>

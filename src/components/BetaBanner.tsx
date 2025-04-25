@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AlertCircle, X } from 'lucide-react';
 
 const BetaBanner: React.FC = () => {
   const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    if (!visible) return;
+    const timer = setTimeout(() => setVisible(false), 10000);
+    return () => clearTimeout(timer);
+  }, [visible]);
+
   if (!visible) return null;
   return (
     <div className="bg-gradient-to-r from-green-600 to-green-500 text-white py-2.5 px-4 text-center fixed bottom-0 left-0 right-0 z-50">
